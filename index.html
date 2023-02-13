@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Budget Tracker</title>
+  <link rel="stylesheet" href="src/main/resources/static/style.css">
+</head>
+<body>
+<header>
+  <h1>Budget Tracker</h1>
+</header>
+
+<main>
+  <form>
+    <label for="currency">Select Currency:</label>
+    <select id="currency">
+      <option value="DK">DK</option>
+      <option value="USD">USD</option>
+      <option value="EUR">EUR</option>
+    </select>
+
+    <label for="salary">Salary:</label>
+    <input type="text" id="salary" name="salary" placeholder="10.000"><br>
+
+    <label for="rent">Rent</label>
+    <input type="text" id="rent" name="rent" placeholder="5.000"><br>
+
+    <input type="button" value="Calculate" id="calculate">
+  </form>
+
+  <table>
+    <thead>
+    <tr>
+      <th>Expenses</th>
+      <th>Amount</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+      <td>Discretionary items</td>
+      <td id="discretionary">2250kr</td>
+    </tr>
+    <tr>
+      <td>Grocery</td>
+      <td id="grocery">1750kr</td>
+    </tr>
+    <tr>
+      <td>Savings</td>
+      <td id="savings">1000kr</td>
+    </tr>
+    </tbody>
+  </table>
+</main>
+
+
+<footer>
+  <div class="copyright">
+    Copyright &copy; Christian Munk-Nissen 2023
+  </div>
+</footer>
+<script src="src/main/resources/static/script.js"></script>
+</body>
+</html>
